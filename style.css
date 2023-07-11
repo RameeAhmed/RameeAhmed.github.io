@@ -57,6 +57,7 @@ a:hover {
   min-height: 90vh;
   height: auto;
   background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
