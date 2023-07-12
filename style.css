@@ -1,26 +1,40 @@
 body {
-
+  padding: 0px;
+  margin: 0px;
   font-family: 'Rubik', sans-serif !important;
   font-size: 15px;
   /* background-color: rgb(20, 19, 19); */
+  background-color: azure;
 
-  width: 100vw;
+
 
 }
-.navbar ul li a:hover{border-bottom:5px solid red ;}
+
+.navbar ul li a:hover {
+  border-bottom: 5px solid red;
+}
 
 
+/* used to add space between elements of navbar and footer */
+.navbar li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+/* used to add space between elements of navbar and footer */
+.btn {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-/* .navbar li {
-  padding-left: 10px;
-  padding-right: 10px;
-} */
+/* to make color grey */
+.grey {
+  color: grey;
+}
 
-/* .btn {
-  padding-left: 10px;
-  padding-right: 10px;
-} */
+.greyfooter {
+  color: rgb(156, 156, 156);
+}
 
 .center {
   justify-content: center;
@@ -30,13 +44,41 @@ a:hover {
   text-decoration: underline;
 }
 
-.dream {
-  margin-top: 12%;
-  color: white;
+.bordera {
+  border: none;
 }
 
+/* to add margin to welcome to robot cage */
+.dream {
+  margin-top: 15vh;
+  color: white;
+  position: relative;
+}
+
+/* making shift in my button */
+.right {
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(80deg);
+  -ms-transform: skewX(100deg);
+  transform: skewX(-10deg);
+}
+
+/* adding toppadding in dream come true */
 .padding {
-  padding: 10px;
+  padding-top: 20vh;
+}
+
+/* style learnmore and explore button */
+.learnmorebutton {
+  border-radius: none;
+  font-size: 0.6rem;
+
+}
+
+/* adding footer button */
+.footerbutton {
+  position: absolute;
+  margin-left: 10%;
 }
 
 .header {
@@ -50,11 +92,11 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-
+/* image style in bcakground */
 .second {
   background-image: url(h2-background-img-3.jpg);
   width: 100vw;
-  min-height: 90vh;
+
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +105,8 @@ a:hover {
 }
 
 .dreamcome {
-  padding-top: 16%
+  padding-top: 16%;
+  width: 90%;
 }
 
 .games {
@@ -83,25 +126,41 @@ a:hover {
   background-color: rgb(20, 19, 19);
 }
 
+
 .robotcage {
   background-color: rgb(18, 2, 2);
   height: auto;
 }
 
-.video {
+/* border setting below appstore */
+.borderbottom {
+  border-bottom: 5px solid white;
+  width: 25%;
+  position: absolute;
+  right: 30%;
+  transform: translateX(-30%);
+}
+
+/* border setting below robotcave */
+.bordbottom {
+  border-bottom: 5px solid white;
+  width: 20%;
+}
+
+/*setting for video background */
+.videobackground {
   background-image: url(h2-background-img-3.jpg);
+  background-position: bottom;
   background-position: center;
+  background-repeat: repeat-y;
   width: 100vw;
-  height: auto;
 }
 
 .text {
   font-size: 0.4em;
 }
 
-.dd {
-  color: white !important;
-}
+
 
 .footera {
   background-color: rgb(28, 27, 27);
@@ -111,96 +170,108 @@ a:hover {
   border: none;
 }
 
-@media(max-width:500px) {
-  .rfs {
-    font-size: 13vw;
-    text-align: center;
-  }}
+@media(max-width:1000px) {
+  .headerbackground {
+    background-image: none;
 
-  @media(max-width:500px) {
-    .rfs2 {
-      padding-top: 20vh;
-    }
+    background-color: black;
+
   }
+}
 
-  @media(max-width:500px) {
+@media(max-width:1000px) {
+  .navbar a img {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
 
-    .size {
-      justify-content: center;
-      text-align: center;
-    }
+
   }
+}
 
-  @media(max-width:500px) {
-    .subscribe {
-      font-size: 0.7em;
-    }
+
+@media(max-width:800px) {
+  #logo {
+    align-items: left;
   }
-  @media(max-width:300px) {
-    .subscribe2 {
-      font-size: 0.7em;
-    }
+}
+
+@media screen and (min-width:540px) and (max-width:900px) {
+
+
+  .headingsize {
+    font-size: 3em;
   }
-  @media(max-width:300px) {
-    .subscribe {
-      font-size: 0.5rem;
-    }
+}
+
+@media (max-width:540px) {
+
+
+  .headingsize {
+    font-size: 1.6em;
+
   }
+}
 
-  @media(max-width:250px) {
-    .subscribe {
-      font-size: 0.425rem;
-    }
+@media (max-width:900px) {
+
+  .iconblock {
+    display: none;
   }
+}
 
-  @media(max-width:200px) {
-    .subscribe {
-      font-size: 0.35rem;
-    }
+@media (max-width:700px) {
+
+  .font {
+    font-size: 0.8em;
   }
+}
 
-  @media(max-width:766px) {
-    .headerbackground {
-      background-image: none;
-      background-color: black;
+/* removing background */
+@media (max-width:900px) {
 
-      justify-content: center;
-
-    }
+  .secondcontainer {
+    background-image: none;
+    background-color: rgb(38, 38, 38);
   }
+}
 
-  @media(min-width:600px) {
+
+/* sets image according to different px size screens  */
 
 
-    .spacing {
-      justify-content: end;
-    }
+@media(max-width:600px) {
+  .imagesize {
+    max-width: 80%;
+    justify-content: center;
   }
+}
 
-  /* .navbar ul {
-    padding-left: 10vw !important;
-  } */
+@media(max-width:450px) {
+  .imagesize {
+    max-width: 60%;
+    justify-content: center;
+  }
+}
 
-  @media(max-width:600px){
-    .imagesize{max-width: 80%;
-      justify-content: center;}
+@media(max-width:300px) {
+  .imagesize {
+    max-width: 500%;
+    justify-content: center;
   }
+}
 
-  @media(max-width:450px){
-    .imagesize{max-width: 60%;
-      justify-content: center;}
-  }
-  @media(max-width:300px){
-    .imagesize{max-width: 500%;
-      justify-content: center;}
-  }
-  @media(min-width:450px){
-    .imageresize{font-size: 2em;
+@media(min-width:450px) {
+  .imageresize {
+    font-size: 2em;
 
-    }
   }
-@media(max-width:450px){
-  .imageresize{font-size: 1em;
+}
+
+@media(max-width:450px) {
+  .imageresize {
+    font-size: 1em;
 
   }
 }
